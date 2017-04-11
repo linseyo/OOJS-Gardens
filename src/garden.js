@@ -11,15 +11,12 @@ garden.name = 'Kula Botanical Garden';
 garden.location = 'Makawao';
 garden.flowers = [];
 
-var daffodil = new Flower("daffodil", "yellow");
-var iris     = new Flower("iris", "purple");
-var aster    = new Flower("aster", "red");
-
-garden.plant = function(flowerNames) {
+garden.plant = function(flowers) {
   var i;
-  for(i=0; i < arguments.length; i++) {
-    newFlower = new Flower(flowerNames[i]);
-    this.flowers.push(newFlower);
+  for(i=0; i < flowers.length; i++) {
+    newFlower = flowers[i];
+    console.log('newFlower is ',newFlower)
+    this.addFlower(newFlower);
   }
 }
 
