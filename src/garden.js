@@ -15,7 +15,7 @@ garden.plant = function(flowers) {
   var i;
   for(i=0; i < flowers.length; i++) {
     var newFlower = flowers[i];
-    console.log('newFlower is ',newFlower)
+    console.log('newFlower is ', newFlower)
     this.addFlower(newFlower);
   }
 }
@@ -34,6 +34,13 @@ garden.flowersByColor = function(colorToFind) {
     return (el.color === colorToFind);
   }
   return this.flowers.filter(flowersThisColor);
+}
+
+garden.flowersByName = function(nameToFind) {
+  var flowersThisName = function(el) {
+    return (el.name === nameToFind);
+  }
+  return this.flowers.filter(flowersThisName);
 }
 
 
