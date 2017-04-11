@@ -23,5 +23,15 @@ var garden = {
         this.flowers.splice(i, 1);
       }
     }
-  }
+  },
+  flowersByColor: function(color){
+    var colorFlower = [];
+    for(var i =0; i < this.flowers.length; i++){
+      if(this.flowers[i].color == color){
+        colorFlower.push(this.flowers[i]);
+      }
+    }
+    return colorFlower
+  },
+
 }
