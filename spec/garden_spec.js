@@ -27,6 +27,7 @@ describe("the garden object", function() {
 
 
       it("can add a flower to its flowers", function() {
+        debugger;
         expect(garden.flowers).toEqual([daffodil]);
         garden.addFlower(iris);
         expect(garden.flowers).toEqual([daffodil, iris]);
