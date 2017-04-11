@@ -29,3 +29,10 @@ garden.flowersByColor = function(color) {
     return flower.color === color;
   }, color);
 }
+
+garden.flowersByName = function(name) {
+  return this.flowers.filter( function(flower) {
+    return flower.name === name;
+  }, name);
+}
+
