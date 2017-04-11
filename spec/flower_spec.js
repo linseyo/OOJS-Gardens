@@ -4,7 +4,10 @@ describe("a flower", function() {
   beforeEach(function() {
     flower = new Flower("daffodil", "yellow");
   });
-
-  it("has a name");
-  it("has a color");
+  it("has a name", function() {
+    expect(flower.name).toEqual("daffodil");
+  });
+  it("has a color", function() {
+    expect(flower.color).toEqual("yellow")
+  });
 });
