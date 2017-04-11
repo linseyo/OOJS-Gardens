@@ -15,3 +15,4 @@ var flower2 = new Flower('daisy','white');
 var flower3 = new Flower('tulip','pink');
 console.log('flower 1 to follow');
 console.log(flower1);
+console.log(flower2);
