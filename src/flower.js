@@ -5,7 +5,7 @@ matching the description in spec/flower_spec.js.
 
 */
 
-var Flower = function(name,color) {
+var Flower = function() {
   this.name = name;
-  this.color = color;
+   this.color = color;
   }

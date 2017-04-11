@@ -15,6 +15,16 @@ var daffodil = new Flower("daffodil", "yellow");
 var iris     = new Flower("iris", "purple");
 var aster    = new Flower("aster", "red");
 
- garden.addFlower = function(flower) {
-    garden.flowers.push(flower);
+garden.plant = function(flowerNames) {
+  var i;
+  for(i=0; i < arguments.length; i++) {
+    newFlower = new Flower(flowerNames[i]);
+    this.flowers.push(newFlower);
+  }
 }
+
+garden.addFlower = function(flower) {
+    this.flowers.push(flower);
+}
+
+
