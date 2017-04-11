@@ -21,12 +21,13 @@ var garden = {
   },
 
   remove: function(flower) {
-
-    for (var i = 0; i < this.flowers.length; i++) {
-      if ((this.flowers[i].name === flower.name) && (this.flowers[i].color === flower.color)) {
-        this.flowers.splice(i, 1);
-      }
-    }
+    var index = this.flowers.indexOf(flower);
+    this.flowers.splice(index, 1);
+    // for (var i = 0; i < this.flowers.length; i++) {
+    //   if ((this.flowers[i].name === flower.name) && (this.flowers[i].color === flower.color)) {
+    //     this.flowers.splice(i, 1);
+    //   }
+    // }
   },
 
   flowersByColor: function(color) {
