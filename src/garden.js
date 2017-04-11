@@ -5,4 +5,7 @@ the attributes and behaviors described in spec/garden_spec.js.
 
 */
 
-var garden = {}
+// OBJECT LITERAL SYNTAX
+var garden = {
+  name: "Kula Botanical Garden"
+}
