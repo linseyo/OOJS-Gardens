@@ -15,7 +15,6 @@ garden.plant = function(flowers) {
   var i;
   for(i=0; i < flowers.length; i++) {
     var newFlower = flowers[i];
-    console.log('newFlower is ', newFlower)
     this.addFlower(newFlower);
   }
 }
