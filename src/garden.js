@@ -11,5 +11,10 @@ var garden = {
   flowers: [],
   addFlower: function(flower) {
     this.flowers.push(flower);
+  },
+plant: function(planted) {
+    for(var i = 0; i < planted.length; i++){
+      this.flowers.push(planted[i]);
+    }
   }
 }
