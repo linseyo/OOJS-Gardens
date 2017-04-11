@@ -8,5 +8,6 @@ the attributes and behaviors described in spec/garden_spec.js.
 // OBJECT LITERAL SYNTAX
 var garden = {
   name: "Kula Botanical Garden",
-  location: "Makawao"
+  location: "Makawao",
+  flowers: []
 }
