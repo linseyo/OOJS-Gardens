@@ -32,5 +32,14 @@ var garden = {
       };
     };
     return flowersWithColor;
+  },
+  flowersByName: function(name){
+    flowersWithName = [];
+    for (var i = 0; i < this.flowers.length; i++){
+      if (this.flowers[i].name === name){
+        flowersWithName.push(this.flowers[i]);
+      };
+    };
+    return flowersWithName;
   }
 }
