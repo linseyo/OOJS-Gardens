@@ -5,4 +5,9 @@ the attributes and behaviors described in spec/garden_spec.js.
 
 */
 
-var garden = {}
+var garden = {
+  name: "Kula Botanical Garden",
+  location: "Makawao",
+  flowers: [],
+
+}
