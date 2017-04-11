@@ -29,4 +29,11 @@ garden.remove = function(flower) {
   this.flowers.splice(flowerIndex,1);
 }
 
+garden.flowersByColor = function(colorToFind) {
+  var flowersThisColor = function(el) {
+    return (el.color === colorToFind);
+  }
+  return this.flowers.filter(flowersThisColor);
+}
+
 
