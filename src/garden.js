@@ -34,4 +34,14 @@ var garden = {
     return colorFlower
   },
 
-}
+  flowersByName: function(name){
+    var flowerPower = [];
+    for(var i=0; i < this.flowers.length; i++){
+      if(this.flowers[i].name == name){
+        flowerPower.push(this.flowers[i]);
+      }
+    }
+    return flowerPower;
+  },
+
+};
