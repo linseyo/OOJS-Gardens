@@ -24,5 +24,13 @@ var garden = {
       };
     };
   },
-
+  flowersByColor: function(color){
+    flowersWithColor = [];
+    for (var i = 0; i < this.flowers.length; i++){
+      if (this.flowers[i].color === color){
+        flowersWithColor.push(this.flowers[i]);
+      };
+    };
+    return flowersWithColor;
+  }
 }
